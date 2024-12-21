@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suma de anillos de una matriz</title>
+</head>
+<body>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            
+        }
+        table {
+            border-collapse: collapse;
+            margin-top: 10px;
+            
+            
+        }
+        td {
+            border: 1px solid #000;
+            width: 30px;
+            height: 30px;
+            
+        }
+        .highlight {
+            background-color: lightblue;
+            
+        }
+        *{
+            background-color: #3a53ad;
+            
+        }
+
+        
+    </style>
+</head>
+<body>
+    <h2>Suma de elementos en un anillo de una matriz</h2>
+    <p>Introduce la dimensión de la matriz (n x n) y el anillo \( k \) a sumar.</p>
+    <label for="dimension">Dimensión de la matriz (n): </label>
+    <input type="number" id="dimension" min="2" value="6">
+    <br>
+    <br>
+    <label for="anillo">Anillo \( k \): </label>
+    <input type="number" id="anillo" min="0" value="0">
+    <br><br>
+    <button onclick="calcularAnillo()">Calcular Suma</button>
+    <h3>Resultado: <span id="resultado">-</span></h3>
+
+    <div id="matriz"></div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
